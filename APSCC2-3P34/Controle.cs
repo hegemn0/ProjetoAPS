@@ -25,9 +25,7 @@ namespace Ordenador
         private ToolStripMenuItem[] listaTSMIVisibilidade;
         private Type[] listaTipos;
         private string[] listaNomeColunas;
-        private int[] listaTamanhoColunas;
-
-        //
+        private int[] listaTamanhoColunas;        
 
         private enum Banco : int { Original, BubbleSort, InsertionSort, HeapSort }
 
