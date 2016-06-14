@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     public class ListaImagens : List<Imagem>, IDisposable
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace APSCC2_3P34.Properties {
+namespace Ordenador.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

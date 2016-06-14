@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     public class ListaDataSet : List<DataSet>, IDisposable
     {

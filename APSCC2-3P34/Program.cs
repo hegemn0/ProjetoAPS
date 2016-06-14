@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     static class Program
     {

@@ -4,7 +4,7 @@ using System.Data.SQLite;
 using System.IO;
 using System.Text;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     public static class BancoDeDados
     {

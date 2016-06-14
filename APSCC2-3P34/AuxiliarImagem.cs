@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.IO;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     public static class AuxiliarImagem
     {

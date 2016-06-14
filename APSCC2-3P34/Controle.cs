@@ -5,7 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     public partial class Controle : Form
     {
@@ -26,6 +26,8 @@ namespace APSCC2_3P34
         private Type[] listaTipos;
         private string[] listaNomeColunas;
         private int[] listaTamanhoColunas;
+
+        //
 
         private enum Banco : int { Original, BubbleSort, InsertionSort, HeapSort }
 

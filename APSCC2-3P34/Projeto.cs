@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     [Serializable]
     class Projeto

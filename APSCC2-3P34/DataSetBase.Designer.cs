@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace APSCC2_3P34 {
+namespace Ordenador {
     
     
     /// <summary>

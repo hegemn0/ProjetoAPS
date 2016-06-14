@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     public partial class Detalhes : Form
     {

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     partial class Controle
     {
@@ -357,7 +357,7 @@ namespace APSCC2_3P34
             // 
             this.TSMI_OcultarId.Checked = true;
             this.TSMI_OcultarId.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.TSMI_OcultarId.Image = global::APSCC2_3P34.Properties.Resources.ponto;
+            this.TSMI_OcultarId.Image = global::Ordenador.Properties.Resources.ponto;
             this.TSMI_OcultarId.Name = "TSMI_OcultarId";
             this.TSMI_OcultarId.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarId.Text = "Id";
@@ -437,7 +437,7 @@ namespace APSCC2_3P34
             this.TSMI_MenorParaMaior,
             this.TSMI_MaiorParaMenor});
             this.TSDDB_Sentido.Enabled = false;
-            this.TSDDB_Sentido.Image = global::APSCC2_3P34.Properties.Resources.sentido1;
+            this.TSDDB_Sentido.Image = global::Ordenador.Properties.Resources.sentido1;
             this.TSDDB_Sentido.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TSDDB_Sentido.Name = "TSDDB_Sentido";
             this.TSDDB_Sentido.Size = new System.Drawing.Size(45, 36);
@@ -447,7 +447,7 @@ namespace APSCC2_3P34
             // TSMI_MenorParaMaior
             // 
             this.TSMI_MenorParaMaior.BackColor = System.Drawing.SystemColors.Window;
-            this.TSMI_MenorParaMaior.Image = global::APSCC2_3P34.Properties.Resources.setac;
+            this.TSMI_MenorParaMaior.Image = global::Ordenador.Properties.Resources.setac;
             this.TSMI_MenorParaMaior.Name = "TSMI_MenorParaMaior";
             this.TSMI_MenorParaMaior.Size = new System.Drawing.Size(185, 38);
             this.TSMI_MenorParaMaior.Text = "Menor para maior";
@@ -458,7 +458,7 @@ namespace APSCC2_3P34
             this.TSMI_MaiorParaMenor.BackColor = System.Drawing.SystemColors.Window;
             this.TSMI_MaiorParaMenor.Checked = true;
             this.TSMI_MaiorParaMenor.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.TSMI_MaiorParaMenor.Image = global::APSCC2_3P34.Properties.Resources.setab;
+            this.TSMI_MaiorParaMenor.Image = global::Ordenador.Properties.Resources.setab;
             this.TSMI_MaiorParaMenor.Name = "TSMI_MaiorParaMenor";
             this.TSMI_MaiorParaMenor.Size = new System.Drawing.Size(185, 38);
             this.TSMI_MaiorParaMenor.Text = "Maior para menor";
@@ -485,7 +485,7 @@ namespace APSCC2_3P34
             // 
             this.TSMI_BubbleSort.Checked = true;
             this.TSMI_BubbleSort.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.TSMI_BubbleSort.Image = global::APSCC2_3P34.Properties.Resources.ponto;
+            this.TSMI_BubbleSort.Image = global::Ordenador.Properties.Resources.ponto;
             this.TSMI_BubbleSort.Name = "TSMI_BubbleSort";
             this.TSMI_BubbleSort.Size = new System.Drawing.Size(168, 38);
             this.TSMI_BubbleSort.Text = "Bubble Sort";

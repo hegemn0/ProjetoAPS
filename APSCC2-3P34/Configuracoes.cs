@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace APSCC2_3P34
+namespace Ordenador
 {
     [Serializable]
     public class Configuracoes
