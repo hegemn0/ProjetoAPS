@@ -27,6 +27,8 @@ namespace Ordenador
         private string[] listaNomeColunas;
         private int[] listaTamanhoColunas;        
 
+        //
+
         private enum Banco : int { Original, BubbleSort, InsertionSort, HeapSort }
 
         private enum Coluna : int { Id, Imagem, Nome, Formato, Tamanho, Altura, Largura, DataCriacao }
