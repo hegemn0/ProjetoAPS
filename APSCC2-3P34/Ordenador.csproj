@@ -52,7 +52,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>APSCC2_3P34.Program</StartupObject>
+    <StartupObject>Ordenador.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>5304462134F42F0F980582293B30E2D15A6342D7</ManifestCertificateThumbprint>
@@ -162,7 +162,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="APSCC3P34_TemporaryKey.pfx" />
     <None Include="DataSetBase.xsc">
       <DependentUpon>DataSetBase.xsd</DependentUpon>
     </None>
