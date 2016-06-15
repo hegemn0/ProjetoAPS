@@ -85,16 +85,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(604, 581);
             this.Controls.Add(this.B_Proximo);
             this.Controls.Add(this.B_Anterior);
             this.Controls.Add(this.B_Fechar);
             this.Controls.Add(this.PB_Detalhes);
             this.DoubleBuffered = true;
+            this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Name = "Detalhes";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_Detalhes)).EndInit();

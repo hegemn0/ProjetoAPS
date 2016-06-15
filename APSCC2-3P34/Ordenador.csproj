@@ -130,6 +130,12 @@
     <Compile Include="AuxiliarImagem.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="QuickSort.cs" />
+    <Compile Include="Resultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultado.Designer.cs">
+      <DependentUpon>Resultado.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectionSort.cs" />
     <Compile Include="ListaImagens.cs" />
     <Compile Include="ListaDataSet.cs" />
@@ -161,6 +167,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultado.resx">
+      <DependentUpon>Resultado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSetBase.xsc">
       <DependentUpon>DataSetBase.xsd</DependentUpon>

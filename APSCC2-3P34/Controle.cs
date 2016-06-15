@@ -180,14 +180,14 @@ namespace Ordenador
                 {                    
                     if (totalRegistros > 0)
                     {
-                        int[] linhas = new int[totalRegistros];
+                        int[] linhasSelecionas = new int[totalRegistros];
 
                         for (int i = 0; i < listaDataGridView[TC_BancoDeDados.SelectedIndex].SelectedRows.Count; i++)
                         {
-                            linhas[i] = Convert.ToInt32(listaDataGridView[TC_BancoDeDados.SelectedIndex].SelectedRows[i].Cells[0].Value);
+                            linhasSelecionas[i] = Convert.ToInt32(listaDataGridView[TC_BancoDeDados.SelectedIndex].SelectedRows[i].Cells[0].Value);
                         }
 
-                        BancoDeDados.Deletar(linhas);
+                        BancoDeDados.Deletar(linhasSelecionas);
                         projetoAlterado = true;
                         dadosOrdenados = false;
                         PB_Preview.Image = null;
@@ -345,8 +345,10 @@ namespace Ordenador
         {
             Detalhes detalhesImagem = new Detalhes(listaDataSet[TC_BancoDeDados.SelectedIndex],
                 listaDataGridView[TC_BancoDeDados.SelectedIndex].CurrentRow.Index, totalRegistros,
-                TC_BancoDeDados.SelectedIndex, TC_BancoDeDados.SelectedTab.Text);
-                detalhesImagem.Show();
+                TC_BancoDeDados.SelectedIndex, TC_BancoDeDados.SelectedTab.Text)
+            { StartPosition = FormStartPosition.WindowsDefaultLocation };
+            
+            detalhesImagem.Show();
         }
 
         private void DialogoSalvarOuDescartarProjeto()
@@ -471,7 +473,7 @@ namespace Ordenador
 
                 TempoDeExecucao(true, TXB_BubbleSort);                
 
-                BubbleSort.Ordenar(listaDataSet[1], indiceColuna, TSMI_MaiorParaMenor.Checked);
+                BubbleSort.Ordenar(listaDataSet[1], TSMI_MaiorParaMenor.Checked, indiceColuna);
 
                 TempoDeExecucao(false, TXB_BubbleSort);
 
@@ -516,7 +518,6 @@ namespace Ordenador
                 TempoDeExecucao(false, TXB_QuickSort);
 
                 OrganizarDataGridView(listaDataSet[4], listaDataGridView[4]);
-
             }
         }
 
@@ -526,28 +527,36 @@ namespace Ordenador
             {
                 if (((ToolStripMenuItem)TSDDB_Ocultar.DropDownItems[i]).Checked)
                 {
-                    DGV_Original.Columns[i].Visible = true;
+                    if(DGV_Original.RowCount > 0)
+                        DGV_Original.Columns[i].Visible = true;
 
-                    if(TSMI_BubbleSort.Checked && dadosOrdenados)
+                    if(DGV_BubbleSort.RowCount > 0)
                         DGV_BubbleSort.Columns[i].Visible = true;
 
-                    if (TSMI_InsertionSort.Checked && dadosOrdenados)
+                    if (DGV_InsertionSort.RowCount > 0)
                         DGV_InsertionSort.Columns[i].Visible = true;
 
-                    if(TSMI_SelectionSort.Checked && dadosOrdenados)
+                    if (DGV_SelectionSort.RowCount > 0)
+                        DGV_SelectionSort.Columns[i].Visible = true;
+
+                    if (DGV_QuickSort.RowCount > 0)
                         DGV_QuickSort.Columns[i].Visible = true;
                 }
                 else
-                {                    
-                    DGV_Original.Columns[i].Visible = false;
-                    
-                    if (!TSMI_BubbleSort.Checked && dadosOrdenados)
+                {
+                    if (DGV_Original.RowCount > 0)
+                        DGV_Original.Columns[i].Visible = false;
+
+                    if (DGV_BubbleSort.RowCount > 0)
                         DGV_BubbleSort.Columns[i].Visible = false;
 
-                    if (!TSMI_InsertionSort.Checked && dadosOrdenados)
+                    if (DGV_InsertionSort.RowCount > 0)
                         DGV_InsertionSort.Columns[i].Visible = false;
 
-                    if (!TSMI_SelectionSort.Checked && dadosOrdenados)
+                    if (DGV_SelectionSort.RowCount > 0)
+                        DGV_SelectionSort.Columns[i].Visible = false;
+
+                    if (DGV_QuickSort.RowCount > 0)
                         DGV_QuickSort.Columns[i].Visible = false;
                 }
             }
