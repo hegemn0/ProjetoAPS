@@ -173,6 +173,16 @@ namespace Ordenador.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap resultado {
+            get {
+                object obj = ResourceManager.GetObject("resultado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap select_table_column_ns {
             get {
                 object obj = ResourceManager.GetObject("select_table_column_ns", resourceCulture);

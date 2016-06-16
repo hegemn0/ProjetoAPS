@@ -118,8 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="list_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\list-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="setab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ponto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ponto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="select_table_column_ns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\select-table-column-ns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +145,14 @@
   <data name="document_edit_verify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\document-edit-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="document_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\document-save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sentido1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sentido1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="view_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\view-refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="document_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="view-sort-descending" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\view-sort-descending2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,14 +160,14 @@
   <data name="applications_system" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\applications-system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="list_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\list-remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="view_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="view-sort-ascending" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\view-sort-ascending2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ponto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ponto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="list_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sentido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sentido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,10 +178,7 @@
   <data name="go-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\go-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="setab" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\setab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="setac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\setac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="resultado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

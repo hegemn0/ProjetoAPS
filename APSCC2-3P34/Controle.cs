@@ -11,11 +11,12 @@ namespace Ordenador
     {
         private Projeto projeto;
         private int totalRegistros, indiceColuna;
+        private int[] listaTamanhoColunas, listaPaginas;
         private const string RegexImagem = "Arquivos de Imagem|*.bmp;*.jpg;*.png;";
         private const string RegexProjeto = "Projeto|*.cc3p34;";
+        private string[] listaNomeColunas;
         private bool projetoEstaAberto = false, projetoAlterado = false, dadosOrdenados = false;
-        private int[] listaPaginas;
-        private DataSetBase dataSetOriginal, dataSetBubbleSort, dataSetInsertionSort, dataSetSelectionSort, dataSetQuicksort;
+        private DataSetBase dataSetOriginal, dataSetBubbleSort, dataSetInsertionSort, dataSetSelectionSort, dataSetQuickSort, dataSetMergeSort, dataSetShellSort, dataSetHeapSort, dataSetQuickSort3;
         private Stopwatch cronometroExecucao;
         private DataGridView[] listaDataGridView;
         private DataSetBase[] listaDataSet;
@@ -24,18 +25,6 @@ namespace Ordenador
         private TabPage[] listaTabPages;
         private ToolStripMenuItem[] listaTSMIVisibilidade;
         private Type[] listaTipos;
-        private string[] listaNomeColunas;
-        private int[] listaTamanhoColunas;        
-
-        //
-
-        private enum Banco : int { Original, BubbleSort, InsertionSort, HeapSort }
-
-        private enum Coluna : int { Id, Imagem, Nome, Formato, Tamanho, Altura, Largura, DataCriacao }
-
-        private enum Ordenacao : int { MaiorParaMenor, MenorParaMaior }
-
-        private enum Dado : int { Numero, String }
 
         public int[] ListaPaginas
         {
@@ -70,7 +59,6 @@ namespace Ordenador
                         this.Text = projeto.Nome;
                         projetoEstaAberto = true;
                         projetoAlterado = true;
-                        dadosOrdenados = false;
                         AtualizarInterface();
                     }
                 }
@@ -464,7 +452,6 @@ namespace Ordenador
 
         private void Ordenar(bool maiorParaMenor)
         {
-
             GerarColunaSelecionada();
 
             if (TSMI_BubbleSort.Checked)
@@ -770,6 +757,9 @@ namespace Ordenador
                 TB_InsertionSort,
                 TB_SelectionSort,
                 TB_QuickSort,
+                TB_MergeSort,
+                TB_ShellSort,
+                TB_HeapSort
             };
 
             listaTextBox = new TextBox[]
@@ -778,6 +768,10 @@ namespace Ordenador
                 TXB_InsertionSort,
                 TXB_SelectionSort,
                 TXB_QuickSort,
+                TXB_MergeSort,
+                TXB_ShellSort,
+                TXB_HeapSort,
+                TXB_QuickSort3
             };
 
             listaTSMIVisibilidade = new ToolStripMenuItem[]
@@ -796,7 +790,11 @@ namespace Ordenador
             dataSetBubbleSort = new DataSetBase();
             dataSetInsertionSort = new DataSetBase();
             dataSetSelectionSort = new DataSetBase();
-            dataSetQuicksort = new DataSetBase();
+            dataSetQuickSort = new DataSetBase();
+            dataSetMergeSort = new DataSetBase();
+            dataSetShellSort = new DataSetBase();
+            dataSetHeapSort = new DataSetBase();
+            dataSetQuickSort3 = new DataSetBase();
 
             listaDataSet = new DataSetBase[]
             {
@@ -804,7 +802,11 @@ namespace Ordenador
                 dataSetBubbleSort,
                 dataSetInsertionSort,
                 dataSetSelectionSort,
-                dataSetQuicksort,
+                dataSetQuickSort,
+                dataSetMergeSort,
+                dataSetShellSort,
+                dataSetHeapSort,
+                dataSetQuickSort3
             };
 
             listaDataGridView = new DataGridView[]
@@ -814,6 +816,10 @@ namespace Ordenador
                 DGV_InsertionSort,
                 DGV_SelectionSort,
                 DGV_QuickSort,
+                DGV_MergeSort,
+                DGV_ShellSort,
+                DGV_HeapSort,
+                DGV_QuickSort3
             };
 
             listaTipos = new Type[]
@@ -852,6 +858,7 @@ namespace Ordenador
                 120,
             };
 
+            GerarColunaSelecionada();
         }
 
         private void Controle_FormClosing(object sender, FormClosingEventArgs e)
