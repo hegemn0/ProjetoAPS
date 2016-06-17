@@ -25,14 +25,6 @@ namespace Ordenador
                     MenorParaMaior(dataSet, temporario, indiceColuna, ref j);
                 }
 
-                /*
-                while (j > 0 && (int)temporario[indiceColuna] > (int)dataSet.Tables[0].Rows[j - 1].ItemArray[indiceColuna])
-                {
-                    dataSet.Tables[0].Rows[j].ItemArray = dataSet.Tables[0].Rows[j - 1].ItemArray;
-                    j--;
-                }
-                */
-
                 dataSet.Tables[0].Rows[j].ItemArray = temporario;
             }
         }
