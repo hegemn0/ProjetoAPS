@@ -89,7 +89,6 @@ namespace Ordenador
                         comandoSQL.CommandText = stringBuilderSQL.ToString();
 
                         comandoSQL.ExecuteNonQuery();
-                        GerarBancoDeDadosSecundarios();
                         transacaoSQL.Commit();
                     }
                 }
@@ -100,25 +99,6 @@ namespace Ordenador
                 finally
                 {
                     conexaoSQL.Close();
-                }
-            }
-        }
-
-        private static void GerarBancoDeDadosSecundarios()
-        {
-            for (int i = 1; i < 4; i++)
-            {
-                switch (i)
-                {
-                    case 1:
-                        File.Copy(Properties.Settings.Default.ListaBancosDeDados[0], Properties.Settings.Default.ListaBancosDeDados[i]);
-                        break;
-                    case 2:
-                        File.Copy(Properties.Settings.Default.ListaBancosDeDados[0], Properties.Settings.Default.ListaBancosDeDados[i]);
-                        break;
-                    case 3:
-                        File.Copy(Properties.Settings.Default.ListaBancosDeDados[0], Properties.Settings.Default.ListaBancosDeDados[i]);
-                        break;
                 }
             }
         }
