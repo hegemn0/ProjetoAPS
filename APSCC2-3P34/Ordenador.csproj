@@ -125,6 +125,7 @@
     <Compile Include="Detalhes.Designer.cs">
       <DependentUpon>Detalhes.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeapSort.cs" />
     <Compile Include="Imagem.cs" />
     <Compile Include="AuxiliarImagem.cs" />
     <Compile Include="InsertionSort.cs" />
@@ -141,6 +142,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Serializador.cs" />
+    <Compile Include="ShellSort.cs" />
     <EmbeddedResource Include="Controle.resx">
       <DependentUpon>Controle.cs</DependentUpon>
     </EmbeddedResource>

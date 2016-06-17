@@ -16,7 +16,7 @@ namespace Ordenador
         private const string RegexProjeto = "Projeto|*.cc3p34;";
         private string[] listaNomeColunas;
         private bool projetoEstaAberto = false, projetoAlterado = false, dadosOrdenados = false;
-        private DataSetBase dataSetOriginal, dataSetBubbleSort, dataSetInsertionSort, dataSetSelectionSort, dataSetQuickSort, dataSetMergeSort, dataSetShellSort, dataSetHeapSort, dataSetQuickSort3;
+        private DataSetBase dataSetOriginal, dataSetBubbleSort, dataSetInsertionSort, dataSetSelectionSort, dataSetQuickSort, dataSetShellSort, dataSetHeapSort;
         private Stopwatch cronometroExecucao;
         private DataGridView[] listaDataGridView;
         private DataSetBase[] listaDataSet;
@@ -467,44 +467,70 @@ namespace Ordenador
                 OrganizarDataGridView(listaDataSet[1], listaDataGridView[1]);
             }
 
-            if (TSMI_InsertionSort.Checked)
+            if (TSMI_QuickSort.Checked)
             {
                 listaDataSet[2] = (DataSetBase)listaDataSet[0].Copy();
 
-                TempoDeExecucao(true, TXB_InsertionSort);                
+                TempoDeExecucao(true, TXB_QuickSort);
 
-                InsertionSort.Ordenar(listaDataSet[2], indiceColuna, TSMI_MaiorParaMenor.Checked);
+                QuickSort.Ordenar(listaDataSet[2], TSMI_MaiorParaMenor.Checked, indiceColuna);
 
-                TempoDeExecucao(false, TXB_InsertionSort);
+                TempoDeExecucao(false, TXB_QuickSort);
 
                 OrganizarDataGridView(listaDataSet[2], listaDataGridView[2]);
             }
 
-            if (TSMI_SelectionSort.Checked)
+            if (TSMI_InsertionSort.Checked)
             {
                 listaDataSet[3] = (DataSetBase)listaDataSet[0].Copy();
 
-                TempoDeExecucao(true, TXB_SelectionSort);
-               
-                SelectionSort.Ordenar(listaDataSet[3], indiceColuna, TSMI_MaiorParaMenor.Checked);
+                TempoDeExecucao(true, TXB_InsertionSort);                
 
-                TempoDeExecucao(false, TXB_SelectionSort);
+                InsertionSort.Ordenar(listaDataSet[3], indiceColuna, TSMI_MaiorParaMenor.Checked);
+
+                TempoDeExecucao(false, TXB_InsertionSort);
 
                 OrganizarDataGridView(listaDataSet[3], listaDataGridView[3]);
-
             }
 
-            if (TSMI_QuickSort.Checked)
+            if (TSMI_ShellSort.Checked)
             {
                 listaDataSet[4] = (DataSetBase)listaDataSet[0].Copy();
 
-                TempoDeExecucao(true, TXB_QuickSort);
+                TempoDeExecucao(true, TXB_ShellSort);
 
-                QuickSort.Ordenar(listaDataSet[4], TSMI_MaiorParaMenor.Checked, indiceColuna);
+                ShellSort.Ordenar(listaDataSet[4], TSMI_MaiorParaMenor.Checked, indiceColuna);
 
-                TempoDeExecucao(false, TXB_QuickSort);
+                TempoDeExecucao(false, TXB_ShellSort);
 
                 OrganizarDataGridView(listaDataSet[4], listaDataGridView[4]);
+            }
+
+            if (TSMI_SelectionSort.Checked)
+            {
+                listaDataSet[5] = (DataSetBase)listaDataSet[0].Copy();
+
+                TempoDeExecucao(true, TXB_SelectionSort);
+               
+                SelectionSort.Ordenar(listaDataSet[5], indiceColuna, TSMI_MaiorParaMenor.Checked);
+
+                TempoDeExecucao(false, TXB_SelectionSort);
+
+                OrganizarDataGridView(listaDataSet[5], listaDataGridView[5]);
+
+            }
+
+            if (TSMI_HeapSort.Checked)
+            {
+                listaDataSet[6] = (DataSetBase)listaDataSet[0].Copy();
+
+                TempoDeExecucao(true, TXB_HeapSort);
+
+                QuickSort.Ordenar(listaDataSet[6], TSMI_MaiorParaMenor.Checked, indiceColuna);
+
+                TempoDeExecucao(false, TXB_HeapSort);
+
+                OrganizarDataGridView(listaDataSet[6], listaDataGridView[6]);
             }
         }
 
@@ -520,14 +546,20 @@ namespace Ordenador
                     if(DGV_BubbleSort.RowCount > 0)
                         DGV_BubbleSort.Columns[i].Visible = true;
 
+                    if (DGV_QuickSort.RowCount > 0)
+                        DGV_QuickSort.Columns[i].Visible = true;
+
                     if (DGV_InsertionSort.RowCount > 0)
                         DGV_InsertionSort.Columns[i].Visible = true;
+
+                    if (DGV_ShellSort.RowCount > 0)
+                        DGV_ShellSort.Columns[i].Visible = true;
 
                     if (DGV_SelectionSort.RowCount > 0)
                         DGV_SelectionSort.Columns[i].Visible = true;
 
-                    if (DGV_QuickSort.RowCount > 0)
-                        DGV_QuickSort.Columns[i].Visible = true;
+                    if (DGV_HeapSort.RowCount > 0)
+                        DGV_HeapSort.Columns[i].Visible = true;
                 }
                 else
                 {
@@ -537,14 +569,20 @@ namespace Ordenador
                     if (DGV_BubbleSort.RowCount > 0)
                         DGV_BubbleSort.Columns[i].Visible = false;
 
+                    if (DGV_QuickSort.RowCount > 0)
+                        DGV_QuickSort.Columns[i].Visible = false;
+
                     if (DGV_InsertionSort.RowCount > 0)
                         DGV_InsertionSort.Columns[i].Visible = false;
+
+                    if (DGV_ShellSort.RowCount > 0)
+                        DGV_ShellSort.Columns[i].Visible = false;
 
                     if (DGV_SelectionSort.RowCount > 0)
                         DGV_SelectionSort.Columns[i].Visible = false;
 
-                    if (DGV_QuickSort.RowCount > 0)
-                        DGV_QuickSort.Columns[i].Visible = false;
+                    if (DGV_HeapSort.RowCount > 0)
+                        DGV_HeapSort.Columns[i].Visible = false;
                 }
             }
         }
@@ -738,6 +776,18 @@ namespace Ordenador
         {
             cronometroExecucao = new Stopwatch();
 
+            listaTSMIVisibilidade = new ToolStripMenuItem[]
+            {
+                TSMI_OcultarId,
+                TSMI_OcultarImagem,
+                TSMI_OcultarNome,
+                TSMI_OcultarFormato,
+                TSMI_OcultarTamanho,
+                TSMI_OcultarAltura,
+                TSMI_OcultarLargura,
+                TSMI_OcultarDataCriacao
+            };
+
             listaTSMISelecionar = new ToolStripMenuItem[]
             {
                 TSMI_SelecionarId,
@@ -754,36 +804,21 @@ namespace Ordenador
             {
                 TB_Original,
                 TB_BubbleSort,
-                TB_InsertionSort,
-                TB_SelectionSort,
                 TB_QuickSort,
-                TB_MergeSort,
+                TB_InsertionSort,
                 TB_ShellSort,
-                TB_HeapSort
+                TB_SelectionSort,                               
+                TB_HeapSort,
             };
 
             listaTextBox = new TextBox[]
             {
                 TXB_BubbleSort,
-                TXB_InsertionSort,
-                TXB_SelectionSort,
                 TXB_QuickSort,
-                TXB_MergeSort,
+                TXB_InsertionSort,
                 TXB_ShellSort,
-                TXB_HeapSort,
-                TXB_QuickSort3
-            };
-
-            listaTSMIVisibilidade = new ToolStripMenuItem[]
-            {
-                TSMI_OcultarId,
-                TSMI_OcultarImagem,
-                TSMI_OcultarNome,
-                TSMI_OcultarFormato,
-                TSMI_OcultarTamanho,
-                TSMI_OcultarAltura,
-                TSMI_OcultarLargura,
-                TSMI_OcultarDataCriacao,
+                TXB_SelectionSort,                               
+                TXB_HeapSort
             };
 
             dataSetOriginal = new DataSetBase();
@@ -791,35 +826,29 @@ namespace Ordenador
             dataSetInsertionSort = new DataSetBase();
             dataSetSelectionSort = new DataSetBase();
             dataSetQuickSort = new DataSetBase();
-            dataSetMergeSort = new DataSetBase();
             dataSetShellSort = new DataSetBase();
             dataSetHeapSort = new DataSetBase();
-            dataSetQuickSort3 = new DataSetBase();
 
             listaDataSet = new DataSetBase[]
             {
                 dataSetOriginal,
                 dataSetBubbleSort,
+                dataSetQuickSort,                
                 dataSetInsertionSort,
-                dataSetSelectionSort,
-                dataSetQuickSort,
-                dataSetMergeSort,
                 dataSetShellSort,
+                dataSetSelectionSort,
                 dataSetHeapSort,
-                dataSetQuickSort3
             };
 
             listaDataGridView = new DataGridView[]
             {
                 DGV_Original,
                 DGV_BubbleSort,
-                DGV_InsertionSort,
-                DGV_SelectionSort,
                 DGV_QuickSort,
-                DGV_MergeSort,
+                DGV_InsertionSort,
                 DGV_ShellSort,
+                DGV_SelectionSort,                                
                 DGV_HeapSort,
-                DGV_QuickSort3
             };
 
             listaTipos = new Type[]

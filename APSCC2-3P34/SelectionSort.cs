@@ -8,121 +8,130 @@ namespace Ordenador
 {
     public static class SelectionSort
     {
-        public static void Ordenar(DataSetBase dataSet, int indiceColuna, bool maiorParaMenor)
+
+        public static void Ordenar(DataSetBase dataSet, bool maiorParaMenor, int indiceColuna)
         {
-            if (maiorParaMenor)
-            {
-                MaiorParaMenor(dataSet, indiceColuna);
-            }
-            else
-            {
-                MenorParaMaior(dataSet, indiceColuna);
-            }
+
         }
 
-        private static void MaiorParaMenor(DataSetBase dataSet, int indiceColuna)
-        {
-            if (dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(int))
-            {
-                for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-                {
-                    int indiceMinimo = i;
-                    for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
-                    {
-                        if (((int)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((int)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) < 0)
-                        {
-                            indiceMinimo = j;
-                        }
-                        Trocar(dataSet, i, indiceMinimo);
-                    }
-                }
-            }
-            else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(string)))
-            {
-                for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-                {
-                    int indiceMinimo = i;
-                    for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
-                    {
-                        if (((string)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((string)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) < 0)
-                        {
-                            indiceMinimo = j;
-                        }
-                        Trocar(dataSet, i, indiceMinimo);
-                    }
-                }
-            }
-            else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(DateTime)))
-            {
-                for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-                {
-                    int indiceMinimo = i;
-                    for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
-                    {
-                        if (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((DateTime)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) < 0)
-                        {
-                            indiceMinimo = j;
-                        }
-                        Trocar(dataSet, i, indiceMinimo);
-                    }
-                }
-            }
-        }
+        /*
+               public static void Ordenar(DataSetBase dataSet, int indiceColuna, bool maiorParaMenor)
+               {
+                   if (maiorParaMenor)
+                   {
+                       MaiorParaMenor(dataSet, indiceColuna);
+                   }
+                   else
+                   {
+                       MenorParaMaior(dataSet, indiceColuna);
+                   }
+               }
 
-        private static void MenorParaMaior(DataSetBase dataSet, int indiceColuna)
-        {
-            if (dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(int))
-            {
-                for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-                {
-                    int indiceMinimo = i;
-                    for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
-                    {
-                        if (((int)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((int)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) > 0)
-                        {
-                            indiceMinimo = j;
-                        }
-                        Trocar(dataSet, i, indiceMinimo);
-                    }
-                }
-            }
-            else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(string)))
-            {
-                for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-                {
-                    int indiceMinimo = i;
-                    for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
-                    {
-                        if (((string)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((string)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) > 0)
-                        {
-                            indiceMinimo = j;
-                        }
-                        Trocar(dataSet, i, indiceMinimo);
-                    }
-                }
-            }
-            else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(DateTime)))
-            {
-                for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
-                {
-                    int indiceMinimo = i;
-                    for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
-                    {
-                        if (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((DateTime)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) > 0)
-                        {
-                            indiceMinimo = j;
-                        }
-                        Trocar(dataSet, i, indiceMinimo);
-                    }
-                }
-            }
-        }
+               private static void MaiorParaMenor(DataSetBase dataSet, int indiceColuna)
+               {
+                   if (dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(int))
+                   {
+                       for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
+                       {
+                           int indiceMinimo = i;
+                           for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
+                           {
+                               if (((int)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((int)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) > 0)
+                               {
+                                   indiceMinimo = j;
+                               }
+                               Trocar(dataSet, i, indiceMinimo);
+                           }
+                       }
+                   }
+                   else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(string)))
+                   {
+                       for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
+                       {
+                           int indiceMinimo = i;
+                           for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
+                           {
+                               if (((string)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((string)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) > 0)
+                               {
+                                   indiceMinimo = j;
+                               }
+                               Trocar(dataSet, i, indiceMinimo);
+                           }
+                       }
+                   }
+                   else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(DateTime)))
+                   {
+                       for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
+                       {
+                           int indiceMinimo = i;
+                           for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
+                           {
+                               if (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((DateTime)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) > 0)
+                               {
+                                   indiceMinimo = j;
+                               }
+                               Trocar(dataSet, i, indiceMinimo);
+                           }
+                       }
+                   }
+               }
 
-        private static void Trocar(DataSetBase dataSet, int i, int indiceMinimo)
-        {
-            object[] temporario = dataSet.Tables[0].Rows[i].ItemArray;
-            dataSet.Tables[0].Rows[i].ItemArray = dataSet.Tables[0].Rows[indiceMinimo].ItemArray;
-            dataSet.Tables[0].Rows[indiceMinimo].ItemArray = temporario;
-        }
+               private static void MenorParaMaior(DataSetBase dataSet, int indiceColuna)
+               {
+                   if (dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(int))
+                   {
+                       for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
+                       {
+                           int indiceMinimo = i;
+                           for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
+                           {
+                               if (((int)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((int)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) < 0)
+                               {
+                                   indiceMinimo = j;
+                               }
+                               Trocar(dataSet, i, indiceMinimo);
+                           }
+                       }
+                   }
+                   else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(string)))
+                   {
+                       for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
+                       {
+                           int indiceMinimo = i;
+                           for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
+                           {
+                               if (((string)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((string)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) < 0)
+                               {
+                                   indiceMinimo = j;
+                               }
+                               Trocar(dataSet, i, indiceMinimo);
+                           }
+                       }
+                   }
+                   else if ((dataSet.Tables[0].Columns[indiceColuna].DataType == typeof(DateTime)))
+                   {
+                       for (int i = 0; i < dataSet.Tables[0].Rows.Count - 1; i++)
+                       {
+                           int indiceMinimo = i;
+                           for (int j = i + 1; j < dataSet.Tables[0].Rows.Count - 1; j++)
+                           {
+                               if (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo(((DateTime)dataSet.Tables[0].Rows[indiceMinimo].ItemArray[indiceColuna])) < 0)
+                               {
+                                   indiceMinimo = j;
+                               }
+                               Trocar(dataSet, i, indiceMinimo);
+                           }
+                       }
+                   }
+               }
+
+               private static void Trocar(DataSetBase dataSet, int i, int indiceMinimo)
+               {
+                   object[] temporario = dataSet.Tables[0].Rows[i].ItemArray;
+                   dataSet.Tables[0].Rows[i].ItemArray = dataSet.Tables[0].Rows[indiceMinimo].ItemArray;
+                   dataSet.Tables[0].Rows[indiceMinimo].ItemArray = temporario;
+               }
+               */
+
     }
 }

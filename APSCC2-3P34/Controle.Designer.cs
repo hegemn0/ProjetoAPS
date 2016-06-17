@@ -31,22 +31,20 @@ namespace Ordenador
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Controle));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MS_Menu = new System.Windows.Forms.MenuStrip();
             this.TSMI_Arquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_Novo = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +80,7 @@ namespace Ordenador
             this.TSMI_InsertionSort = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_SelectionSort = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_QuickSort = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_HeapSort = new System.Windows.Forms.ToolStripMenuItem();
             this.TSDDB_Selecionar = new System.Windows.Forms.ToolStripDropDownButton();
             this.TSMI_SelecionarId = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_SelecionarImagem = new System.Windows.Forms.ToolStripMenuItem();
@@ -116,9 +115,6 @@ namespace Ordenador
             this.TB_SelectionSort = new System.Windows.Forms.TabPage();
             this.P_SelectionSort = new System.Windows.Forms.Panel();
             this.DGV_SelectionSort = new System.Windows.Forms.DataGridView();
-            this.TB_MergeSort = new System.Windows.Forms.TabPage();
-            this.P_MergeSort = new System.Windows.Forms.Panel();
-            this.DGV_MergeSort = new System.Windows.Forms.DataGridView();
             this.TB_ShellSort = new System.Windows.Forms.TabPage();
             this.P_ShellSort = new System.Windows.Forms.Panel();
             this.DGV_ShellSort = new System.Windows.Forms.DataGridView();
@@ -126,25 +122,19 @@ namespace Ordenador
             this.P_HeapSort = new System.Windows.Forms.Panel();
             this.DGV_HeapSort = new System.Windows.Forms.DataGridView();
             this.GB_TempoExecucao = new System.Windows.Forms.GroupBox();
+            this.L_ShellSort = new System.Windows.Forms.Label();
             this.L_QuickSort = new System.Windows.Forms.Label();
+            this.L_HeapSort = new System.Windows.Forms.Label();
             this.L_SelectionSort = new System.Windows.Forms.Label();
             this.L_InsertionSort = new System.Windows.Forms.Label();
             this.L_BubbleSort = new System.Windows.Forms.Label();
+            this.TXB_ShellSort = new System.Windows.Forms.TextBox();
             this.TXB_SelectionSort = new System.Windows.Forms.TextBox();
+            this.TXB_HeapSort = new System.Windows.Forms.TextBox();
             this.TXB_QuickSort = new System.Windows.Forms.TextBox();
             this.TXB_InsertionSort = new System.Windows.Forms.TextBox();
             this.TXB_BubbleSort = new System.Windows.Forms.TextBox();
-            this.TXB_MergeSort = new System.Windows.Forms.TextBox();
-            this.L_MergeSort = new System.Windows.Forms.Label();
-            this.TXB_ShellSort = new System.Windows.Forms.TextBox();
-            this.L_ShellSort = new System.Windows.Forms.Label();
-            this.TB_QuickSort3 = new System.Windows.Forms.TabPage();
-            this.P_QuickSort3 = new System.Windows.Forms.Panel();
-            this.DGV_QuickSort3 = new System.Windows.Forms.DataGridView();
-            this.TXB_HeapSort = new System.Windows.Forms.TextBox();
-            this.TXB_QuickSort3 = new System.Windows.Forms.TextBox();
-            this.L_HeapSort = new System.Windows.Forms.Label();
-            this.L_QuickSort3 = new System.Windows.Forms.Label();
+            this.TSMI_ShellSort = new System.Windows.Forms.ToolStripMenuItem();
             this.MS_Menu.SuspendLayout();
             this.GB_Preview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Preview)).BeginInit();
@@ -165,9 +155,6 @@ namespace Ordenador
             this.TB_SelectionSort.SuspendLayout();
             this.P_SelectionSort.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_SelectionSort)).BeginInit();
-            this.TB_MergeSort.SuspendLayout();
-            this.P_MergeSort.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_MergeSort)).BeginInit();
             this.TB_ShellSort.SuspendLayout();
             this.P_ShellSort.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShellSort)).BeginInit();
@@ -175,9 +162,6 @@ namespace Ordenador
             this.P_HeapSort.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_HeapSort)).BeginInit();
             this.GB_TempoExecucao.SuspendLayout();
-            this.TB_QuickSort3.SuspendLayout();
-            this.P_QuickSort3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_QuickSort3)).BeginInit();
             this.SuspendLayout();
             // 
             // MS_Menu
@@ -257,12 +241,13 @@ namespace Ordenador
             // 
             // GB_Preview
             // 
-            this.GB_Preview.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GB_Preview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GB_Preview.Controls.Add(this.PB_Preview);
             this.GB_Preview.Location = new System.Drawing.Point(759, 83);
             this.GB_Preview.Name = "GB_Preview";
-            this.GB_Preview.Size = new System.Drawing.Size(271, 314);
+            this.GB_Preview.Size = new System.Drawing.Size(271, 372);
             this.GB_Preview.TabIndex = 1;
             this.GB_Preview.TabStop = false;
             this.GB_Preview.Text = "Preview";
@@ -272,7 +257,7 @@ namespace Ordenador
             this.PB_Preview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PB_Preview.Location = new System.Drawing.Point(3, 16);
             this.PB_Preview.Name = "PB_Preview";
-            this.PB_Preview.Size = new System.Drawing.Size(265, 295);
+            this.PB_Preview.Size = new System.Drawing.Size(265, 353);
             this.PB_Preview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_Preview.TabIndex = 0;
             this.PB_Preview.TabStop = false;
@@ -393,14 +378,14 @@ namespace Ordenador
             this.TSMI_OcultarId.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_OcultarId.Image = global::Ordenador.Properties.Resources.ponto;
             this.TSMI_OcultarId.Name = "TSMI_OcultarId";
-            this.TSMI_OcultarId.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarId.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarId.Text = "Id";
             // 
             // TSMI_OcultarImagem
             // 
             this.TSMI_OcultarImagem.BackColor = System.Drawing.SystemColors.Control;
             this.TSMI_OcultarImagem.Name = "TSMI_OcultarImagem";
-            this.TSMI_OcultarImagem.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarImagem.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarImagem.Text = "Imagem";
             // 
             // TSMI_OcultarNome
@@ -411,7 +396,7 @@ namespace Ordenador
             this.TSMI_OcultarNome.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_OcultarNome.Image")));
             this.TSMI_OcultarNome.Name = "TSMI_OcultarNome";
             this.TSMI_OcultarNome.ShowShortcutKeys = false;
-            this.TSMI_OcultarNome.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarNome.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarNome.Text = "Nome";
             // 
             // TSMI_OcultarFormato
@@ -421,7 +406,7 @@ namespace Ordenador
             this.TSMI_OcultarFormato.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_OcultarFormato.Image")));
             this.TSMI_OcultarFormato.Name = "TSMI_OcultarFormato";
             this.TSMI_OcultarFormato.ShowShortcutKeys = false;
-            this.TSMI_OcultarFormato.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarFormato.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarFormato.Text = "Formato";
             // 
             // TSMI_OcultarTamanho
@@ -431,7 +416,7 @@ namespace Ordenador
             this.TSMI_OcultarTamanho.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_OcultarTamanho.Image")));
             this.TSMI_OcultarTamanho.Name = "TSMI_OcultarTamanho";
             this.TSMI_OcultarTamanho.ShowShortcutKeys = false;
-            this.TSMI_OcultarTamanho.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarTamanho.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarTamanho.Text = "Tamanho";
             // 
             // TSMI_OcultarAltura
@@ -441,7 +426,7 @@ namespace Ordenador
             this.TSMI_OcultarAltura.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_OcultarAltura.Image")));
             this.TSMI_OcultarAltura.Name = "TSMI_OcultarAltura";
             this.TSMI_OcultarAltura.ShowShortcutKeys = false;
-            this.TSMI_OcultarAltura.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarAltura.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarAltura.Text = "Altura";
             // 
             // TSMI_OcultarLargura
@@ -451,7 +436,7 @@ namespace Ordenador
             this.TSMI_OcultarLargura.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_OcultarLargura.Image")));
             this.TSMI_OcultarLargura.Name = "TSMI_OcultarLargura";
             this.TSMI_OcultarLargura.ShowShortcutKeys = false;
-            this.TSMI_OcultarLargura.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarLargura.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarLargura.Text = "Largura";
             // 
             // TSMI_OcultarDataCriacao
@@ -461,7 +446,7 @@ namespace Ordenador
             this.TSMI_OcultarDataCriacao.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_OcultarDataCriacao.Image")));
             this.TSMI_OcultarDataCriacao.Name = "TSMI_OcultarDataCriacao";
             this.TSMI_OcultarDataCriacao.ShowShortcutKeys = false;
-            this.TSMI_OcultarDataCriacao.Size = new System.Drawing.Size(150, 22);
+            this.TSMI_OcultarDataCriacao.Size = new System.Drawing.Size(168, 38);
             this.TSMI_OcultarDataCriacao.Text = "Data de Criação";
             // 
             // TSDDB_Sentido
@@ -483,7 +468,7 @@ namespace Ordenador
             this.TSMI_MenorParaMaior.BackColor = System.Drawing.SystemColors.Window;
             this.TSMI_MenorParaMaior.Image = global::Ordenador.Properties.Resources.setac;
             this.TSMI_MenorParaMaior.Name = "TSMI_MenorParaMaior";
-            this.TSMI_MenorParaMaior.Size = new System.Drawing.Size(169, 22);
+            this.TSMI_MenorParaMaior.Size = new System.Drawing.Size(185, 38);
             this.TSMI_MenorParaMaior.Text = "Menor para maior";
             this.TSMI_MenorParaMaior.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
@@ -494,7 +479,7 @@ namespace Ordenador
             this.TSMI_MaiorParaMenor.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_MaiorParaMenor.Image = global::Ordenador.Properties.Resources.setab;
             this.TSMI_MaiorParaMenor.Name = "TSMI_MaiorParaMenor";
-            this.TSMI_MaiorParaMenor.Size = new System.Drawing.Size(169, 22);
+            this.TSMI_MaiorParaMenor.Size = new System.Drawing.Size(185, 38);
             this.TSMI_MaiorParaMenor.Text = "Maior para menor";
             this.TSMI_MaiorParaMenor.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
@@ -503,9 +488,11 @@ namespace Ordenador
             this.TSDDB_Algoritmo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.TSDDB_Algoritmo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMI_BubbleSort,
+            this.TSMI_QuickSort,
             this.TSMI_InsertionSort,
+            this.TSMI_ShellSort,
             this.TSMI_SelectionSort,
-            this.TSMI_QuickSort});
+            this.TSMI_HeapSort});
             this.TSDDB_Algoritmo.Enabled = false;
             this.TSDDB_Algoritmo.Image = ((System.Drawing.Image)(resources.GetObject("TSDDB_Algoritmo.Image")));
             this.TSDDB_Algoritmo.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -521,7 +508,7 @@ namespace Ordenador
             this.TSMI_BubbleSort.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_BubbleSort.Image = global::Ordenador.Properties.Resources.ponto;
             this.TSMI_BubbleSort.Name = "TSMI_BubbleSort";
-            this.TSMI_BubbleSort.Size = new System.Drawing.Size(146, 22);
+            this.TSMI_BubbleSort.Size = new System.Drawing.Size(168, 38);
             this.TSMI_BubbleSort.Text = "Bubble Sort";
             // 
             // TSMI_InsertionSort
@@ -530,7 +517,7 @@ namespace Ordenador
             this.TSMI_InsertionSort.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_InsertionSort.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_InsertionSort.Image")));
             this.TSMI_InsertionSort.Name = "TSMI_InsertionSort";
-            this.TSMI_InsertionSort.Size = new System.Drawing.Size(146, 22);
+            this.TSMI_InsertionSort.Size = new System.Drawing.Size(168, 38);
             this.TSMI_InsertionSort.Text = "Insertion Sort";
             // 
             // TSMI_SelectionSort
@@ -539,7 +526,7 @@ namespace Ordenador
             this.TSMI_SelectionSort.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_SelectionSort.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_SelectionSort.Image")));
             this.TSMI_SelectionSort.Name = "TSMI_SelectionSort";
-            this.TSMI_SelectionSort.Size = new System.Drawing.Size(146, 22);
+            this.TSMI_SelectionSort.Size = new System.Drawing.Size(168, 38);
             this.TSMI_SelectionSort.Text = "Selection Sort";
             // 
             // TSMI_QuickSort
@@ -548,8 +535,17 @@ namespace Ordenador
             this.TSMI_QuickSort.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_QuickSort.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_QuickSort.Image")));
             this.TSMI_QuickSort.Name = "TSMI_QuickSort";
-            this.TSMI_QuickSort.Size = new System.Drawing.Size(146, 22);
+            this.TSMI_QuickSort.Size = new System.Drawing.Size(168, 38);
             this.TSMI_QuickSort.Text = "Quick Sort";
+            // 
+            // TSMI_HeapSort
+            // 
+            this.TSMI_HeapSort.Checked = true;
+            this.TSMI_HeapSort.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TSMI_HeapSort.Image = global::Ordenador.Properties.Resources.ponto;
+            this.TSMI_HeapSort.Name = "TSMI_HeapSort";
+            this.TSMI_HeapSort.Size = new System.Drawing.Size(168, 38);
+            this.TSMI_HeapSort.Text = "Heap Sort";
             // 
             // TSDDB_Selecionar
             // 
@@ -568,20 +564,20 @@ namespace Ordenador
             this.TSDDB_Selecionar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TSDDB_Selecionar.Name = "TSDDB_Selecionar";
             this.TSDDB_Selecionar.Size = new System.Drawing.Size(45, 36);
-            this.TSDDB_Selecionar.ToolTipText = "Selecionar Coluna";
+            this.TSDDB_Selecionar.ToolTipText = "Ordenar por";
             this.TSDDB_Selecionar.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.TSDDB_Selecionar_DropDownItemClicked);
             // 
             // TSMI_SelecionarId
             // 
             this.TSMI_SelecionarId.Name = "TSMI_SelecionarId";
-            this.TSMI_SelecionarId.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarId.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarId.Text = "Id";
             // 
             // TSMI_SelecionarImagem
             // 
             this.TSMI_SelecionarImagem.Enabled = false;
             this.TSMI_SelecionarImagem.Name = "TSMI_SelecionarImagem";
-            this.TSMI_SelecionarImagem.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarImagem.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarImagem.Text = "Imagem";
             // 
             // TSMI_SelecionarNome
@@ -590,37 +586,37 @@ namespace Ordenador
             this.TSMI_SelecionarNome.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TSMI_SelecionarNome.Image = ((System.Drawing.Image)(resources.GetObject("TSMI_SelecionarNome.Image")));
             this.TSMI_SelecionarNome.Name = "TSMI_SelecionarNome";
-            this.TSMI_SelecionarNome.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarNome.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarNome.Text = "Nome";
             // 
             // TSMI_SelecionarFormato
             // 
             this.TSMI_SelecionarFormato.Name = "TSMI_SelecionarFormato";
-            this.TSMI_SelecionarFormato.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarFormato.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarFormato.Text = "Formato";
             // 
             // TSMI_SelecionarTamanho
             // 
             this.TSMI_SelecionarTamanho.Name = "TSMI_SelecionarTamanho";
-            this.TSMI_SelecionarTamanho.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarTamanho.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarTamanho.Text = "Tamanho";
             // 
             // TSMI_SelecionarAltura
             // 
             this.TSMI_SelecionarAltura.Name = "TSMI_SelecionarAltura";
-            this.TSMI_SelecionarAltura.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarAltura.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarAltura.Text = "Altura";
             // 
             // TSMI_SelecionarLargura
             // 
             this.TSMI_SelecionarLargura.Name = "TSMI_SelecionarLargura";
-            this.TSMI_SelecionarLargura.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarLargura.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarLargura.Text = "Largura";
             // 
             // TSMI_SelecionarDataCriacao
             // 
             this.TSMI_SelecionarDataCriacao.Name = "TSMI_SelecionarDataCriacao";
-            this.TSMI_SelecionarDataCriacao.Size = new System.Drawing.Size(157, 22);
+            this.TSMI_SelecionarDataCriacao.Size = new System.Drawing.Size(173, 38);
             this.TSMI_SelecionarDataCriacao.Text = "Data de Criação";
             // 
             // TSB_Ordenar
@@ -636,8 +632,8 @@ namespace Ordenador
             // 
             // dataGridViewTextBoxColumn21
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn21.HeaderText = "Data de Criação";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             this.dataGridViewTextBoxColumn21.ReadOnly = true;
@@ -647,8 +643,8 @@ namespace Ordenador
             // 
             // dataGridViewTextBoxColumn20
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn20.HeaderText = "Largura (pixels)";
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.ReadOnly = true;
@@ -657,17 +653,17 @@ namespace Ordenador
             // 
             // dataGridViewTextBoxColumn19
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn19.HeaderText = "Altura (pixels)";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             this.dataGridViewTextBoxColumn19.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn18
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn18.HeaderText = "Tamanho (bytes)";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
@@ -676,8 +672,8 @@ namespace Ordenador
             // 
             // dataGridViewTextBoxColumn17
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn17.HeaderText = "Formato";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.ReadOnly = true;
@@ -687,8 +683,8 @@ namespace Ordenador
             // 
             // dataGridViewTextBoxColumn16
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewTextBoxColumn16.HeaderText = "Nome";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
@@ -708,8 +704,8 @@ namespace Ordenador
             // 
             // dataGridViewTextBoxColumn15
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewTextBoxColumn15.HeaderText = "Id";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.ReadOnly = true;
@@ -719,8 +715,10 @@ namespace Ordenador
             // 
             this.TB_QuickSort.Controls.Add(this.P_QuickSort);
             this.TB_QuickSort.Location = new System.Drawing.Point(4, 28);
+            this.TB_QuickSort.Margin = new System.Windows.Forms.Padding(5);
             this.TB_QuickSort.Name = "TB_QuickSort";
-            this.TB_QuickSort.Size = new System.Drawing.Size(741, 479);
+            this.TB_QuickSort.Padding = new System.Windows.Forms.Padding(3);
+            this.TB_QuickSort.Size = new System.Drawing.Size(745, 581);
             this.TB_QuickSort.TabIndex = 3;
             this.TB_QuickSort.Text = "Quick Sort";
             this.TB_QuickSort.UseVisualStyleBackColor = true;
@@ -733,7 +731,7 @@ namespace Ordenador
             this.P_QuickSort.Controls.Add(this.DGV_QuickSort);
             this.P_QuickSort.Location = new System.Drawing.Point(6, 8);
             this.P_QuickSort.Name = "P_QuickSort";
-            this.P_QuickSort.Size = new System.Drawing.Size(729, 465);
+            this.P_QuickSort.Size = new System.Drawing.Size(733, 567);
             this.P_QuickSort.TabIndex = 2;
             // 
             // DGV_QuickSort
@@ -744,14 +742,14 @@ namespace Ordenador
             this.DGV_QuickSort.AllowUserToResizeRows = false;
             this.DGV_QuickSort.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_QuickSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_QuickSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_QuickSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.DGV_QuickSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_QuickSort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_QuickSort.Location = new System.Drawing.Point(0, 0);
@@ -760,7 +758,7 @@ namespace Ordenador
             this.DGV_QuickSort.RowHeadersVisible = false;
             this.DGV_QuickSort.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV_QuickSort.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_QuickSort.Size = new System.Drawing.Size(729, 465);
+            this.DGV_QuickSort.Size = new System.Drawing.Size(733, 567);
             this.DGV_QuickSort.TabIndex = 1;
             this.DGV_QuickSort.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellClick);
             this.DGV_QuickSort.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellDoubleClick);
@@ -769,8 +767,10 @@ namespace Ordenador
             // 
             this.TB_InsertionSort.Controls.Add(this.P_InsertionSort);
             this.TB_InsertionSort.Location = new System.Drawing.Point(4, 28);
+            this.TB_InsertionSort.Margin = new System.Windows.Forms.Padding(5);
             this.TB_InsertionSort.Name = "TB_InsertionSort";
-            this.TB_InsertionSort.Size = new System.Drawing.Size(741, 497);
+            this.TB_InsertionSort.Padding = new System.Windows.Forms.Padding(3);
+            this.TB_InsertionSort.Size = new System.Drawing.Size(745, 581);
             this.TB_InsertionSort.TabIndex = 2;
             this.TB_InsertionSort.Text = "Insertion Sort";
             this.TB_InsertionSort.UseVisualStyleBackColor = true;
@@ -783,7 +783,7 @@ namespace Ordenador
             this.P_InsertionSort.Controls.Add(this.DGV_InsertionSort);
             this.P_InsertionSort.Location = new System.Drawing.Point(6, 8);
             this.P_InsertionSort.Name = "P_InsertionSort";
-            this.P_InsertionSort.Size = new System.Drawing.Size(729, 483);
+            this.P_InsertionSort.Size = new System.Drawing.Size(733, 567);
             this.P_InsertionSort.TabIndex = 2;
             // 
             // DGV_InsertionSort
@@ -794,14 +794,14 @@ namespace Ordenador
             this.DGV_InsertionSort.AllowUserToResizeRows = false;
             this.DGV_InsertionSort.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_InsertionSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_InsertionSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_InsertionSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.DGV_InsertionSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_InsertionSort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_InsertionSort.Location = new System.Drawing.Point(0, 0);
@@ -810,7 +810,7 @@ namespace Ordenador
             this.DGV_InsertionSort.RowHeadersVisible = false;
             this.DGV_InsertionSort.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV_InsertionSort.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_InsertionSort.Size = new System.Drawing.Size(729, 483);
+            this.DGV_InsertionSort.Size = new System.Drawing.Size(733, 567);
             this.DGV_InsertionSort.TabIndex = 1;
             this.DGV_InsertionSort.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellClick);
             this.DGV_InsertionSort.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellDoubleClick);
@@ -819,7 +819,9 @@ namespace Ordenador
             // 
             this.TB_BubbleSort.Controls.Add(this.P_BubbleSort);
             this.TB_BubbleSort.Location = new System.Drawing.Point(4, 28);
+            this.TB_BubbleSort.Margin = new System.Windows.Forms.Padding(5);
             this.TB_BubbleSort.Name = "TB_BubbleSort";
+            this.TB_BubbleSort.Padding = new System.Windows.Forms.Padding(3);
             this.TB_BubbleSort.Size = new System.Drawing.Size(745, 581);
             this.TB_BubbleSort.TabIndex = 1;
             this.TB_BubbleSort.Text = "Bubble Sort";
@@ -844,14 +846,14 @@ namespace Ordenador
             this.DGV_BubbleSort.AllowUserToResizeRows = false;
             this.DGV_BubbleSort.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_BubbleSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_BubbleSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_BubbleSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.DGV_BubbleSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_BubbleSort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_BubbleSort.Location = new System.Drawing.Point(0, 0);
@@ -896,14 +898,14 @@ namespace Ordenador
             this.DGV_Original.AllowUserToResizeRows = false;
             this.DGV_Original.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_Original.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Original.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Original.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.DGV_Original.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_Original.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Original.Location = new System.Drawing.Point(0, 0);
@@ -920,18 +922,15 @@ namespace Ordenador
             // 
             // TC_BancoDeDados
             // 
-            this.TC_BancoDeDados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TC_BancoDeDados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.TC_BancoDeDados.Controls.Add(this.TB_Original);
             this.TC_BancoDeDados.Controls.Add(this.TB_BubbleSort);
-            this.TC_BancoDeDados.Controls.Add(this.TB_InsertionSort);
-            this.TC_BancoDeDados.Controls.Add(this.TB_SelectionSort);
             this.TC_BancoDeDados.Controls.Add(this.TB_QuickSort);
-            this.TC_BancoDeDados.Controls.Add(this.TB_MergeSort);
+            this.TC_BancoDeDados.Controls.Add(this.TB_InsertionSort);
             this.TC_BancoDeDados.Controls.Add(this.TB_ShellSort);
+            this.TC_BancoDeDados.Controls.Add(this.TB_SelectionSort);
             this.TC_BancoDeDados.Controls.Add(this.TB_HeapSort);
-            this.TC_BancoDeDados.Controls.Add(this.TB_QuickSort3);
             this.TC_BancoDeDados.Enabled = false;
             this.TC_BancoDeDados.Location = new System.Drawing.Point(0, 63);
             this.TC_BancoDeDados.Multiline = true;
@@ -950,7 +949,7 @@ namespace Ordenador
             this.TB_SelectionSort.Margin = new System.Windows.Forms.Padding(5);
             this.TB_SelectionSort.Name = "TB_SelectionSort";
             this.TB_SelectionSort.Padding = new System.Windows.Forms.Padding(3);
-            this.TB_SelectionSort.Size = new System.Drawing.Size(741, 497);
+            this.TB_SelectionSort.Size = new System.Drawing.Size(745, 581);
             this.TB_SelectionSort.TabIndex = 4;
             this.TB_SelectionSort.Text = "Selection Sort";
             this.TB_SelectionSort.UseVisualStyleBackColor = true;
@@ -963,7 +962,7 @@ namespace Ordenador
             this.P_SelectionSort.Controls.Add(this.DGV_SelectionSort);
             this.P_SelectionSort.Location = new System.Drawing.Point(6, 8);
             this.P_SelectionSort.Name = "P_SelectionSort";
-            this.P_SelectionSort.Size = new System.Drawing.Size(729, 483);
+            this.P_SelectionSort.Size = new System.Drawing.Size(733, 567);
             this.P_SelectionSort.TabIndex = 1;
             // 
             // DGV_SelectionSort
@@ -974,14 +973,14 @@ namespace Ordenador
             this.DGV_SelectionSort.AllowUserToResizeRows = false;
             this.DGV_SelectionSort.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_SelectionSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_SelectionSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_SelectionSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.DGV_SelectionSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_SelectionSort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_SelectionSort.Location = new System.Drawing.Point(0, 0);
@@ -990,60 +989,10 @@ namespace Ordenador
             this.DGV_SelectionSort.RowHeadersVisible = false;
             this.DGV_SelectionSort.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV_SelectionSort.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_SelectionSort.Size = new System.Drawing.Size(729, 483);
+            this.DGV_SelectionSort.Size = new System.Drawing.Size(733, 567);
             this.DGV_SelectionSort.TabIndex = 0;
             this.DGV_SelectionSort.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellClick);
             this.DGV_SelectionSort.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellDoubleClick);
-            // 
-            // TB_MergeSort
-            // 
-            this.TB_MergeSort.Controls.Add(this.P_MergeSort);
-            this.TB_MergeSort.Location = new System.Drawing.Point(4, 28);
-            this.TB_MergeSort.Margin = new System.Windows.Forms.Padding(5);
-            this.TB_MergeSort.Name = "TB_MergeSort";
-            this.TB_MergeSort.Padding = new System.Windows.Forms.Padding(3);
-            this.TB_MergeSort.Size = new System.Drawing.Size(745, 581);
-            this.TB_MergeSort.TabIndex = 5;
-            this.TB_MergeSort.Text = "Merge Sort";
-            this.TB_MergeSort.UseVisualStyleBackColor = true;
-            // 
-            // P_MergeSort
-            // 
-            this.P_MergeSort.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_MergeSort.Controls.Add(this.DGV_MergeSort);
-            this.P_MergeSort.Location = new System.Drawing.Point(6, 8);
-            this.P_MergeSort.Name = "P_MergeSort";
-            this.P_MergeSort.Size = new System.Drawing.Size(733, 567);
-            this.P_MergeSort.TabIndex = 1;
-            // 
-            // DGV_MergeSort
-            // 
-            this.DGV_MergeSort.AllowUserToAddRows = false;
-            this.DGV_MergeSort.AllowUserToDeleteRows = false;
-            this.DGV_MergeSort.AllowUserToResizeColumns = false;
-            this.DGV_MergeSort.AllowUserToResizeRows = false;
-            this.DGV_MergeSort.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.DGV_MergeSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_MergeSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.DGV_MergeSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DGV_MergeSort.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV_MergeSort.Location = new System.Drawing.Point(0, 0);
-            this.DGV_MergeSort.Name = "DGV_MergeSort";
-            this.DGV_MergeSort.ReadOnly = true;
-            this.DGV_MergeSort.RowHeadersVisible = false;
-            this.DGV_MergeSort.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.DGV_MergeSort.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_MergeSort.Size = new System.Drawing.Size(733, 567);
-            this.DGV_MergeSort.TabIndex = 0;
             // 
             // TB_ShellSort
             // 
@@ -1052,7 +1001,7 @@ namespace Ordenador
             this.TB_ShellSort.Margin = new System.Windows.Forms.Padding(5);
             this.TB_ShellSort.Name = "TB_ShellSort";
             this.TB_ShellSort.Padding = new System.Windows.Forms.Padding(3);
-            this.TB_ShellSort.Size = new System.Drawing.Size(741, 497);
+            this.TB_ShellSort.Size = new System.Drawing.Size(745, 581);
             this.TB_ShellSort.TabIndex = 6;
             this.TB_ShellSort.Text = "Shell Sort";
             this.TB_ShellSort.UseVisualStyleBackColor = true;
@@ -1065,7 +1014,7 @@ namespace Ordenador
             this.P_ShellSort.Controls.Add(this.DGV_ShellSort);
             this.P_ShellSort.Location = new System.Drawing.Point(6, 8);
             this.P_ShellSort.Name = "P_ShellSort";
-            this.P_ShellSort.Size = new System.Drawing.Size(729, 483);
+            this.P_ShellSort.Size = new System.Drawing.Size(733, 567);
             this.P_ShellSort.TabIndex = 1;
             // 
             // DGV_ShellSort
@@ -1076,14 +1025,14 @@ namespace Ordenador
             this.DGV_ShellSort.AllowUserToResizeRows = false;
             this.DGV_ShellSort.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_ShellSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_ShellSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_ShellSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.DGV_ShellSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_ShellSort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_ShellSort.Location = new System.Drawing.Point(0, 0);
@@ -1092,7 +1041,7 @@ namespace Ordenador
             this.DGV_ShellSort.RowHeadersVisible = false;
             this.DGV_ShellSort.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV_ShellSort.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_ShellSort.Size = new System.Drawing.Size(729, 483);
+            this.DGV_ShellSort.Size = new System.Drawing.Size(733, 567);
             this.DGV_ShellSort.TabIndex = 0;
             // 
             // TB_HeapSort
@@ -1102,7 +1051,7 @@ namespace Ordenador
             this.TB_HeapSort.Margin = new System.Windows.Forms.Padding(5);
             this.TB_HeapSort.Name = "TB_HeapSort";
             this.TB_HeapSort.Padding = new System.Windows.Forms.Padding(3);
-            this.TB_HeapSort.Size = new System.Drawing.Size(741, 479);
+            this.TB_HeapSort.Size = new System.Drawing.Size(745, 581);
             this.TB_HeapSort.TabIndex = 7;
             this.TB_HeapSort.Text = "Heap Sort";
             this.TB_HeapSort.UseVisualStyleBackColor = true;
@@ -1115,7 +1064,7 @@ namespace Ordenador
             this.P_HeapSort.Controls.Add(this.DGV_HeapSort);
             this.P_HeapSort.Location = new System.Drawing.Point(6, 8);
             this.P_HeapSort.Name = "P_HeapSort";
-            this.P_HeapSort.Size = new System.Drawing.Size(729, 465);
+            this.P_HeapSort.Size = new System.Drawing.Size(733, 567);
             this.P_HeapSort.TabIndex = 1;
             // 
             // DGV_HeapSort
@@ -1126,14 +1075,14 @@ namespace Ordenador
             this.DGV_HeapSort.AllowUserToResizeRows = false;
             this.DGV_HeapSort.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV_HeapSort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_HeapSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_HeapSort.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.DGV_HeapSort.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_HeapSort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_HeapSort.Location = new System.Drawing.Point(0, 0);
@@ -1142,34 +1091,41 @@ namespace Ordenador
             this.DGV_HeapSort.RowHeadersVisible = false;
             this.DGV_HeapSort.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV_HeapSort.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_HeapSort.Size = new System.Drawing.Size(729, 465);
+            this.DGV_HeapSort.Size = new System.Drawing.Size(733, 567);
             this.DGV_HeapSort.TabIndex = 0;
             // 
             // GB_TempoExecucao
             // 
-            this.GB_TempoExecucao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.GB_TempoExecucao.Controls.Add(this.L_QuickSort3);
+            this.GB_TempoExecucao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GB_TempoExecucao.Controls.Add(this.L_ShellSort);
-            this.GB_TempoExecucao.Controls.Add(this.L_MergeSort);
             this.GB_TempoExecucao.Controls.Add(this.L_QuickSort);
             this.GB_TempoExecucao.Controls.Add(this.L_HeapSort);
             this.GB_TempoExecucao.Controls.Add(this.L_SelectionSort);
             this.GB_TempoExecucao.Controls.Add(this.L_InsertionSort);
             this.GB_TempoExecucao.Controls.Add(this.L_BubbleSort);
-            this.GB_TempoExecucao.Controls.Add(this.TXB_QuickSort3);
             this.GB_TempoExecucao.Controls.Add(this.TXB_ShellSort);
-            this.GB_TempoExecucao.Controls.Add(this.TXB_MergeSort);
             this.GB_TempoExecucao.Controls.Add(this.TXB_SelectionSort);
             this.GB_TempoExecucao.Controls.Add(this.TXB_HeapSort);
             this.GB_TempoExecucao.Controls.Add(this.TXB_QuickSort);
             this.GB_TempoExecucao.Controls.Add(this.TXB_InsertionSort);
             this.GB_TempoExecucao.Controls.Add(this.TXB_BubbleSort);
-            this.GB_TempoExecucao.Location = new System.Drawing.Point(759, 403);
+            this.GB_TempoExecucao.Location = new System.Drawing.Point(759, 461);
             this.GB_TempoExecucao.Name = "GB_TempoExecucao";
-            this.GB_TempoExecucao.Size = new System.Drawing.Size(271, 273);
+            this.GB_TempoExecucao.Size = new System.Drawing.Size(271, 215);
             this.GB_TempoExecucao.TabIndex = 6;
             this.GB_TempoExecucao.TabStop = false;
             this.GB_TempoExecucao.Text = "Tempo Total de Ordenação";
+            // 
+            // L_ShellSort
+            // 
+            this.L_ShellSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.L_ShellSort.AutoSize = true;
+            this.L_ShellSort.Location = new System.Drawing.Point(155, 94);
+            this.L_ShellSort.Name = "L_ShellSort";
+            this.L_ShellSort.Size = new System.Drawing.Size(52, 13);
+            this.L_ShellSort.TabIndex = 7;
+            this.L_ShellSort.Text = "Shell Sort";
             // 
             // L_QuickSort
             // 
@@ -1180,6 +1136,16 @@ namespace Ordenador
             this.L_QuickSort.Size = new System.Drawing.Size(57, 13);
             this.L_QuickSort.TabIndex = 7;
             this.L_QuickSort.Text = "Quick Sort";
+            // 
+            // L_HeapSort
+            // 
+            this.L_HeapSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.L_HeapSort.AutoSize = true;
+            this.L_HeapSort.Location = new System.Drawing.Point(155, 157);
+            this.L_HeapSort.Name = "L_HeapSort";
+            this.L_HeapSort.Size = new System.Drawing.Size(55, 13);
+            this.L_HeapSort.TabIndex = 8;
+            this.L_HeapSort.Text = "Heap Sort";
             // 
             // L_SelectionSort
             // 
@@ -1211,6 +1177,17 @@ namespace Ordenador
             this.L_BubbleSort.TabIndex = 10;
             this.L_BubbleSort.Text = "Bubble Sort";
             // 
+            // TXB_ShellSort
+            // 
+            this.TXB_ShellSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.TXB_ShellSort.Enabled = false;
+            this.TXB_ShellSort.Location = new System.Drawing.Point(158, 110);
+            this.TXB_ShellSort.Name = "TXB_ShellSort";
+            this.TXB_ShellSort.ReadOnly = true;
+            this.TXB_ShellSort.Size = new System.Drawing.Size(88, 20);
+            this.TXB_ShellSort.TabIndex = 3;
+            this.TXB_ShellSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // TXB_SelectionSort
             // 
             this.TXB_SelectionSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1221,6 +1198,17 @@ namespace Ordenador
             this.TXB_SelectionSort.Size = new System.Drawing.Size(88, 20);
             this.TXB_SelectionSort.TabIndex = 3;
             this.TXB_SelectionSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TXB_HeapSort
+            // 
+            this.TXB_HeapSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.TXB_HeapSort.Enabled = false;
+            this.TXB_HeapSort.Location = new System.Drawing.Point(158, 173);
+            this.TXB_HeapSort.Name = "TXB_HeapSort";
+            this.TXB_HeapSort.ReadOnly = true;
+            this.TXB_HeapSort.Size = new System.Drawing.Size(88, 20);
+            this.TXB_HeapSort.TabIndex = 4;
+            this.TXB_HeapSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TXB_QuickSort
             // 
@@ -1255,139 +1243,14 @@ namespace Ordenador
             this.TXB_BubbleSort.TabIndex = 6;
             this.TXB_BubbleSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TXB_MergeSort
+            // TSMI_ShellSort
             // 
-            this.TXB_MergeSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.TXB_MergeSort.Enabled = false;
-            this.TXB_MergeSort.Location = new System.Drawing.Point(158, 110);
-            this.TXB_MergeSort.Name = "TXB_MergeSort";
-            this.TXB_MergeSort.ReadOnly = true;
-            this.TXB_MergeSort.Size = new System.Drawing.Size(88, 20);
-            this.TXB_MergeSort.TabIndex = 3;
-            this.TXB_MergeSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L_MergeSort
-            // 
-            this.L_MergeSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.L_MergeSort.AutoSize = true;
-            this.L_MergeSort.Location = new System.Drawing.Point(155, 94);
-            this.L_MergeSort.Name = "L_MergeSort";
-            this.L_MergeSort.Size = new System.Drawing.Size(59, 13);
-            this.L_MergeSort.TabIndex = 7;
-            this.L_MergeSort.Text = "Merge Sort";
-            // 
-            // TXB_ShellSort
-            // 
-            this.TXB_ShellSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.TXB_ShellSort.Enabled = false;
-            this.TXB_ShellSort.Location = new System.Drawing.Point(158, 173);
-            this.TXB_ShellSort.Name = "TXB_ShellSort";
-            this.TXB_ShellSort.ReadOnly = true;
-            this.TXB_ShellSort.Size = new System.Drawing.Size(88, 20);
-            this.TXB_ShellSort.TabIndex = 3;
-            this.TXB_ShellSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L_ShellSort
-            // 
-            this.L_ShellSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.L_ShellSort.AutoSize = true;
-            this.L_ShellSort.Location = new System.Drawing.Point(155, 157);
-            this.L_ShellSort.Name = "L_ShellSort";
-            this.L_ShellSort.Size = new System.Drawing.Size(52, 13);
-            this.L_ShellSort.TabIndex = 7;
-            this.L_ShellSort.Text = "Shell Sort";
-            // 
-            // TB_QuickSort3
-            // 
-            this.TB_QuickSort3.Controls.Add(this.P_QuickSort3);
-            this.TB_QuickSort3.Location = new System.Drawing.Point(4, 28);
-            this.TB_QuickSort3.Margin = new System.Windows.Forms.Padding(5);
-            this.TB_QuickSort3.Name = "TB_QuickSort3";
-            this.TB_QuickSort3.Padding = new System.Windows.Forms.Padding(3);
-            this.TB_QuickSort3.Size = new System.Drawing.Size(745, 581);
-            this.TB_QuickSort3.TabIndex = 8;
-            this.TB_QuickSort3.Text = "Quick Sort 3";
-            this.TB_QuickSort3.UseVisualStyleBackColor = true;
-            // 
-            // P_QuickSort3
-            // 
-            this.P_QuickSort3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_QuickSort3.Controls.Add(this.DGV_QuickSort3);
-            this.P_QuickSort3.Location = new System.Drawing.Point(6, 8);
-            this.P_QuickSort3.Name = "P_QuickSort3";
-            this.P_QuickSort3.Size = new System.Drawing.Size(733, 567);
-            this.P_QuickSort3.TabIndex = 1;
-            // 
-            // DGV_QuickSort3
-            // 
-            this.DGV_QuickSort3.AllowUserToAddRows = false;
-            this.DGV_QuickSort3.AllowUserToDeleteRows = false;
-            this.DGV_QuickSort3.AllowUserToResizeColumns = false;
-            this.DGV_QuickSort3.AllowUserToResizeRows = false;
-            this.DGV_QuickSort3.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.DGV_QuickSort3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_QuickSort3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.DGV_QuickSort3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DGV_QuickSort3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV_QuickSort3.Location = new System.Drawing.Point(0, 0);
-            this.DGV_QuickSort3.Name = "DGV_QuickSort3";
-            this.DGV_QuickSort3.ReadOnly = true;
-            this.DGV_QuickSort3.RowHeadersVisible = false;
-            this.DGV_QuickSort3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.DGV_QuickSort3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_QuickSort3.Size = new System.Drawing.Size(733, 567);
-            this.DGV_QuickSort3.TabIndex = 0;
-            // 
-            // TXB_HeapSort
-            // 
-            this.TXB_HeapSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.TXB_HeapSort.Enabled = false;
-            this.TXB_HeapSort.Location = new System.Drawing.Point(27, 234);
-            this.TXB_HeapSort.Name = "TXB_HeapSort";
-            this.TXB_HeapSort.ReadOnly = true;
-            this.TXB_HeapSort.Size = new System.Drawing.Size(88, 20);
-            this.TXB_HeapSort.TabIndex = 4;
-            this.TXB_HeapSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TXB_QuickSort3
-            // 
-            this.TXB_QuickSort3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.TXB_QuickSort3.Enabled = false;
-            this.TXB_QuickSort3.Location = new System.Drawing.Point(158, 234);
-            this.TXB_QuickSort3.Name = "TXB_QuickSort3";
-            this.TXB_QuickSort3.ReadOnly = true;
-            this.TXB_QuickSort3.Size = new System.Drawing.Size(88, 20);
-            this.TXB_QuickSort3.TabIndex = 3;
-            this.TXB_QuickSort3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // L_HeapSort
-            // 
-            this.L_HeapSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.L_HeapSort.AutoSize = true;
-            this.L_HeapSort.Location = new System.Drawing.Point(24, 218);
-            this.L_HeapSort.Name = "L_HeapSort";
-            this.L_HeapSort.Size = new System.Drawing.Size(55, 13);
-            this.L_HeapSort.TabIndex = 8;
-            this.L_HeapSort.Text = "Heap Sort";
-            // 
-            // L_QuickSort3
-            // 
-            this.L_QuickSort3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.L_QuickSort3.AutoSize = true;
-            this.L_QuickSort3.Location = new System.Drawing.Point(155, 218);
-            this.L_QuickSort3.Name = "L_QuickSort3";
-            this.L_QuickSort3.Size = new System.Drawing.Size(66, 13);
-            this.L_QuickSort3.TabIndex = 7;
-            this.L_QuickSort3.Text = "Quick Sort 3";
+            this.TSMI_ShellSort.Checked = true;
+            this.TSMI_ShellSort.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TSMI_ShellSort.Image = global::Ordenador.Properties.Resources.ponto;
+            this.TSMI_ShellSort.Name = "TSMI_ShellSort";
+            this.TSMI_ShellSort.Size = new System.Drawing.Size(168, 38);
+            this.TSMI_ShellSort.Text = "Shell Sort";
             // 
             // Controle
             // 
@@ -1428,9 +1291,6 @@ namespace Ordenador
             this.TB_SelectionSort.ResumeLayout(false);
             this.P_SelectionSort.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_SelectionSort)).EndInit();
-            this.TB_MergeSort.ResumeLayout(false);
-            this.P_MergeSort.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_MergeSort)).EndInit();
             this.TB_ShellSort.ResumeLayout(false);
             this.P_ShellSort.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ShellSort)).EndInit();
@@ -1439,9 +1299,6 @@ namespace Ordenador
             ((System.ComponentModel.ISupportInitialize)(this.DGV_HeapSort)).EndInit();
             this.GB_TempoExecucao.ResumeLayout(false);
             this.GB_TempoExecucao.PerformLayout();
-            this.TB_QuickSort3.ResumeLayout(false);
-            this.P_QuickSort3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_QuickSort3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1526,9 +1383,6 @@ namespace Ordenador
         private Panel P_QuickSort;
         private ToolStripMenuItem TSMI_Ajuda;
         private ToolStripMenuItem TSMI_Sobre;
-        public TabPage TB_MergeSort;
-        private Panel P_MergeSort;
-        private DataGridView DGV_MergeSort;
         public TabPage TB_ShellSort;
         private Panel P_ShellSort;
         private DataGridView DGV_ShellSort;
@@ -1536,16 +1390,11 @@ namespace Ordenador
         private Panel P_HeapSort;
         private DataGridView DGV_HeapSort;
         private Label L_ShellSort;
-        private Label L_MergeSort;
         private TextBox TXB_ShellSort;
-        private TextBox TXB_MergeSort;
-        public TabPage TB_QuickSort3;
-        private Panel P_QuickSort3;
-        private DataGridView DGV_QuickSort3;
-        private Label L_QuickSort3;
         private Label L_HeapSort;
-        private TextBox TXB_QuickSort3;
         private TextBox TXB_HeapSort;
+        private ToolStripMenuItem TSMI_HeapSort;
+        private ToolStripMenuItem TSMI_ShellSort;
     }
 }
 
