@@ -47,16 +47,17 @@
             this.GB_Sobre.Size = new System.Drawing.Size(296, 234);
             this.GB_Sobre.TabIndex = 1;
             this.GB_Sobre.TabStop = false;
-            this.GB_Sobre.Text = "Sobre";
             // 
             // TXB_Sobre
             // 
             this.TXB_Sobre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TXB_Sobre.Enabled = false;
             this.TXB_Sobre.Location = new System.Drawing.Point(6, 69);
             this.TXB_Sobre.Multiline = true;
             this.TXB_Sobre.Name = "TXB_Sobre";
+            this.TXB_Sobre.ReadOnly = true;
             this.TXB_Sobre.Size = new System.Drawing.Size(284, 159);
             this.TXB_Sobre.TabIndex = 0;
             this.TXB_Sobre.Text = resources.GetString("TXB_Sobre.Text");
@@ -70,6 +71,7 @@
             this.LLB_CodigoFonte.TabIndex = 1;
             this.LLB_CodigoFonte.TabStop = true;
             this.LLB_CodigoFonte.Text = "Código fonte";
+            this.LLB_CodigoFonte.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LLB_CodigoFonte_LinkClicked);
             // 
             // Sobre
             // 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,15 @@ namespace Ordenador
         }
 
         private void Sobre_Load(object sender, EventArgs e)
-        {
-            //LLB_CodigoFonte.Link = new LinkLabel();
-
+        {         
             LinkLabel.Link link = new LinkLabel.Link();
-            link.LinkData = "";
+            link.LinkData = "https://github.com/hegemn0/ProjetoAPS";
+            LLB_CodigoFonte.Links.Add(link);
+        }
+
+        private void LLB_CodigoFonte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(e.Link.LinkData as string);
         }
     }
 }

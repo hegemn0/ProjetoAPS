@@ -672,6 +672,14 @@ namespace Ordenador
             GerarColunaSelecionada();
         }
 
+        private void TSMI_Sobre_Click(object sender, EventArgs e)
+        {
+            using (Sobre sobre = new Sobre())
+            {
+                sobre.ShowDialog();
+            }
+        }
+
         private void TSDDB_Ocultar_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             if (!((ToolStripMenuItem)e.ClickedItem).Checked)
