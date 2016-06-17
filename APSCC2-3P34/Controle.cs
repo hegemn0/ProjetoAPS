@@ -512,7 +512,7 @@ namespace Ordenador
 
                 TempoDeExecucao(true, TXB_SelectionSort);
                
-                SelectionSort.Ordenar(listaDataSet[5], indiceColuna, TSMI_MaiorParaMenor.Checked);
+                SelectionSort.Ordenar(listaDataSet[5], TSMI_MaiorParaMenor.Checked, indiceColuna);
 
                 TempoDeExecucao(false, TXB_SelectionSort);
 

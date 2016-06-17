@@ -82,12 +82,12 @@ namespace Ordenador
             }
             else if (dataSet.Tables[0].Rows[i].ItemArray[indiceColuna].GetType() == typeof(DateTime))
             {
-                while (((DateTime)dataSet.Tables[0].Rows[i].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) < 0)
+                while (((DateTime)dataSet.Tables[0].Rows[i].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) > 0)
                 {
                     i++;
                 }
 
-                while (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) > 0)
+                while (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) < 0)
                 {
                     j--;
                 }
@@ -122,12 +122,12 @@ namespace Ordenador
             }
             else if (dataSet.Tables[0].Rows[i].ItemArray[indiceColuna].GetType() == typeof(DateTime))
             {
-                while (((DateTime)dataSet.Tables[0].Rows[i].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) > 0)
+                while (((DateTime)dataSet.Tables[0].Rows[i].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) < 0)
                 {
                     i++;
                 }
 
-                while (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) < 0)
+                while (((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]).CompareTo((DateTime)pivo[indiceColuna]) > 0)
                 {
                     j--;
                 }

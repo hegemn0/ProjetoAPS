@@ -55,7 +55,7 @@ namespace Ordenador
                 {
                     for (int j = 0; j < dataSet.Tables[0].Rows.Count; j++)
                     {
-                        if (((string)dataSet.Tables[0].Rows[i].ItemArray[indiceColuna]).CompareTo((string)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]) > 0)
+                        if (((DateTime)dataSet.Tables[0].Rows[i].ItemArray[indiceColuna]).CompareTo((DateTime)dataSet.Tables[0].Rows[j].ItemArray[indiceColuna]) > 0)
                         {
                             Trocar(dataSet, i, j);
                         }
